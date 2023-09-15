@@ -1,5 +1,5 @@
 {% set name = "ytree" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ytree-{{ version }}.tar.gz
-  sha256: 8fb022a4013e5e514de5442ed4b5cefd5831484cac5f04d2f6bb49416c1b215e
+  sha256: 4e929763e05d1e414f9f9c683450ca15fe0c116cd965cf52efe32f2685b38a9f
 
 build:
   noarch: python

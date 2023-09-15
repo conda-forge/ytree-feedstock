@@ -1,11 +1,11 @@
-About ytree
-===========
+About ytree-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ytree-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ytree-project/ytree
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ytree-feedstock/blob/main/LICENSE.txt)
 
 Summary: An extension of yt for working with merger tree data.
 

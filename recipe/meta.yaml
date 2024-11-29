@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ytree-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ytree-{{ version }}.tar.gz
   sha256: 4e929763e05d1e414f9f9c683450ca15fe0c116cd965cf52efe32f2685b38a9f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - configparser
     - h5py
     - more-itertools >=8.4
     - numpy
-    - python >=3.7
+    - python >={{ python_min }}
     - unyt
     - yt >=4.0
 
@@ -34,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ytree-project/ytree
